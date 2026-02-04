@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(50, 40px);
+    grid-template-rows: repeat(50, 40px);
+    background-color: rgb(124, 194, 238);
+}
+
+
+div {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#sky {
+    background-color: rgb(124, 194, 238);
+}
+
+#ground {
+    background-image: url("./images/soil1.png");
+
+}
+
+#stone {
+    background-image: url("./images/diamond.png");
+}
+
+div:hover {
+    filter: brightness(1.1);
+    border: 1px solid white;
+    cursor: url("./images/sword-icon.cur") ,pointer;
+}

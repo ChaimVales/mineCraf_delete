@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(50, 40px);
+  grid-template-rows: repeat(50, 40px);
+  background-color: rgb(124, 194, 238);
+}
+
+div {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sky {
+  background-color: rgb(124, 194, 238);
+}
+
+#ground {
+    background-image: conic-gradient(from 90deg, gray, white, gray,white);
+}
+
+#stone {
+    background-image: conic-gradient(from 90deg, brown, black, brown,white,brown, black, brown,white);
+}
+#tree {
+    background-image: conic-gradient(from 90deg, rgb(22, 14, 178), rgb(17, 196, 62), rgb(199, 227, 12),white,brown, rgb(190, 14, 102), brown,white);
+}
+
+div:hover {
+  filter: brightness(1.5);
+  border: 1px solid black;
+  cursor: url("./images/sword-icon.cur"), pointer;
+}
